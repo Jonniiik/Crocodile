@@ -1,13 +1,11 @@
 package com.example.crocodile
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.LottieAnimationView
 import com.example.crocodile.Model.ThemesCrocodile
-import java.util.*
 import kotlin.collections.ArrayList
 
 
@@ -52,7 +50,7 @@ class MainActivity : AppCompatActivity() {
                 tvCrocodile.text = themesOne[rand].name
                 themesOne.removeAt(rand)
             } else {
-                tvCrocodile.text = "Список из темы Один закончились"
+                tvCrocodile.text = "Список из темы 1 закончились"
             }
         }
         tvTwoButton.setOnClickListener {
@@ -62,7 +60,7 @@ class MainActivity : AppCompatActivity() {
                 tvCrocodile.text = themesTwo[rand].name
                 themesTwo.removeAt(rand)
             } else {
-                tvCrocodile.text = "Список из темы Два закончились"
+                tvCrocodile.text = "Список из темы 2 закончились"
             }
         }
         tvThreeButton.setOnClickListener {
@@ -72,41 +70,114 @@ class MainActivity : AppCompatActivity() {
                 tvCrocodile.text = themesThree[rand].name
                 themesThree.removeAt(rand)
             } else {
-                tvCrocodile.text = "Список из темы Три закончились"
+                tvCrocodile.text = "Список из темы 3 закончились"
             }
         }
     }
 
     private fun createData() {
-        listOne.add(ThemesCrocodile("Лист 1. Один"))
-        listOne.add(ThemesCrocodile("Лист 1. Два"))
-        listOne.add(ThemesCrocodile("Лист 1. Три"))
-        listOne.add(ThemesCrocodile("Лист 1. Четыре"))
-        listOne.add(ThemesCrocodile("Лист 1. Пять"))
-        listOne.add(ThemesCrocodile("Лист 1. Шесть"))
-        listOne.add(ThemesCrocodile("Лист 1. Семь"))
-        listOne.add(ThemesCrocodile("Лист 1. Восемь"))
-        listOne.add(ThemesCrocodile("Лист 1. Девять"))
+        listOne.add(ThemesCrocodile("Ёлка"))
+        listOne.add(ThemesCrocodile("Дед Мороз дарит подарок"))
+        listOne.add(ThemesCrocodile("Ребенок получает подарок"))
+        listOne.add(ThemesCrocodile("Эльф делает игрушку"))
+        listOne.add(ThemesCrocodile("Эльф"))
+        listOne.add(ThemesCrocodile("Бенгальские огни"))
+        listOne.add(ThemesCrocodile("Хоровод"))
+        listOne.add(ThemesCrocodile("Снег"))
+        listOne.add(ThemesCrocodile("Есть Мандарин"))
+        listOne.add(ThemesCrocodile("Мандарин"))
+        listOne.add(ThemesCrocodile("Ёлочная иголка"))
+        listOne.add(ThemesCrocodile("Мишура"))
+        listOne.add(ThemesCrocodile("Конфетти"))
+        listOne.add(ThemesCrocodile("Лепить Снеговика"))
+        listOne.add(ThemesCrocodile("Развесить Гирлянду"))
+        listOne.add(ThemesCrocodile("Новогодний салат"))
+        listOne.add(ThemesCrocodile("Веселый Пьяный Степа"))
+        listOne.add(ThemesCrocodile("Пьяный Степа"))
+        listOne.add(ThemesCrocodile("Пьяный гость"))
+        listOne.add(ThemesCrocodile("подарок"))
+        listOne.add(ThemesCrocodile("хоровод"))
+        listOne.add(ThemesCrocodile("варежки"))
+        listOne.add(ThemesCrocodile("салют"))
+        listOne.add(ThemesCrocodile("катание на лыжах"))
+        listOne.add(ThemesCrocodile("катание на коньках"))
+        listOne.add(ThemesCrocodile("Письмо Деду Морозу"))
+        listOne.add(ThemesCrocodile("Новогодний утренник"))
+        listOne.add(ThemesCrocodile("Новогоднее желание"))
+        listOne.add(ThemesCrocodile("Елочные игрушки"))
+        listOne.add(ThemesCrocodile("Северный полюс"))
+        listOne.add(ThemesCrocodile("Санта Клаус"))
+        listOne.add(ThemesCrocodile("Олени Санта Клауса"))
+        listOne.add(ThemesCrocodile("Печенье и теплое молоко"))
+        listOne.add(ThemesCrocodile("Снегурочка"))
+        listOne.add(ThemesCrocodile("Дед Мороз"))
+        listOne.add(ThemesCrocodile("Домик Деда Мороза"))
+        listOne.add(ThemesCrocodile("Украшать ёлку"))
+        listOne.add(ThemesCrocodile("Чудо на рождество"))
 
-        listTwo.add(ThemesCrocodile("Лист 2. Один"))
-        listTwo.add(ThemesCrocodile("Лист 2. Два"))
-        listTwo.add(ThemesCrocodile("Лист 2. Три"))
-        listTwo.add(ThemesCrocodile("Лист 2. Четыре"))
-        listTwo.add(ThemesCrocodile("Лист 2. Пять"))
-        listTwo.add(ThemesCrocodile("Лист 2. Шесть"))
-        listTwo.add(ThemesCrocodile("Лист 2. Семь"))
-        listTwo.add(ThemesCrocodile("Лист 2. Восемь"))
-        listTwo.add(ThemesCrocodile("Лист 2. Девять"))
+        listTwo.add(ThemesCrocodile("Лапландия"))
+        listTwo.add(ThemesCrocodile("Старый Новый год"))
+        listTwo.add(ThemesCrocodile("Танец снежинок"))
+        listTwo.add(ThemesCrocodile("Новогодний утренник"))
+        listTwo.add(ThemesCrocodile("Ребенок пишет письмо Деду Морозу"))
+        listTwo.add(ThemesCrocodile("Новогодние куранты"))
+        listTwo.add(ThemesCrocodile("Новогодние праздники"))
+        listTwo.add(ThemesCrocodile("Холодец"))
+        listTwo.add(ThemesCrocodile("Дед Мороз катается на лыжах"))
+        listTwo.add(ThemesCrocodile("Дети катаются на коньках"))
+        listTwo.add(ThemesCrocodile("Один Дома"))
+        listTwo.add(ThemesCrocodile("Кевин остался дома один(Из Один Дома)"))
+        listTwo.add(ThemesCrocodile("Новогоднее желание"))
+        listTwo.add(ThemesCrocodile("Взрывать петарды"))
+        listTwo.add(ThemesCrocodile("Полный мешок подарков"))
+        listTwo.add(ThemesCrocodile("Папа переоделся в Деда Мороза"))
+        listTwo.add(ThemesCrocodile("Ёлочная игрушка разбилась"))
+        listTwo.add(ThemesCrocodile("Дед Мороз подарил Книгу"))
+        listTwo.add(ThemesCrocodile("Ребенок катается на сноуборде"))
+        listTwo.add(ThemesCrocodile("У Деда Мороза дети украли бороду"))
+        listTwo.add(ThemesCrocodile("Дед Мороз похудел"))
+        listTwo.add(ThemesCrocodile("Санта Клаус должен женится"))
+        listTwo.add(ThemesCrocodile("Инопланетяни летят над океаном и поют Джингал Белз"))
+        listTwo.add(ThemesCrocodile("Рудольф сломал рог и теперь его не узнают дети"))
+        listTwo.add(ThemesCrocodile("31 декабря идет снегопад"))
+        listTwo.add(ThemesCrocodile("1 января такси будет стоить 300 рублей"))
+        listTwo.add(ThemesCrocodile("У Санты красный нос"))
+        listTwo.add(ThemesCrocodile("Военные охраняют Санту, что бы его не сбили ПВО"))
+        listTwo.add(ThemesCrocodile("Папе плохо Первого Января"))
+        listTwo.add(ThemesCrocodile("Санта Клаус в подвале"))
+        listTwo.add(ThemesCrocodile("Олег получит подарок"))
+        listTwo.add(ThemesCrocodile("Сын Санты попал в список плохишей"))
 
-        listThree.add(ThemesCrocodile("Лист 3. Один"))
-        listThree.add(ThemesCrocodile("Лист 3. Два"))
-        listThree.add(ThemesCrocodile("Лист 3. Три"))
-        listThree.add(ThemesCrocodile("Лист 3. Четыре"))
-        listThree.add(ThemesCrocodile("Лист 3. Пять"))
-        listThree.add(ThemesCrocodile("Лист 3. Шесть"))
-        listThree.add(ThemesCrocodile("Лист 3. Семь"))
-        listThree.add(ThemesCrocodile("Лист 3. Восемь"))
-        listThree.add(ThemesCrocodile("Лист 3. Девять"))
+        listThree.add(ThemesCrocodile("Снег кружится, летает, летает"))
+        listThree.add(ThemesCrocodile("В лесу родилась елочка"))
+        listThree.add(ThemesCrocodile("Ирония судьбы или С легким паром"))
+        listThree.add(ThemesCrocodile("Дед Мороз решил не дарить подарок"))
+        listThree.add(ThemesCrocodile("Родители решили рассказать, что Деда Мороза нет"))
+        listThree.add(ThemesCrocodile("Санта Клаус дарит уголь"))
+        listThree.add(ThemesCrocodile("Одна лампочка гирлянды не горит"))
+        listThree.add(ThemesCrocodile("Дед Мороз потерял зуб в драке"))
+        listThree.add(ThemesCrocodile("Снегурочка решила, что больше не может жить с дедом и нашла молодого парня"))
+        listThree.add(ThemesCrocodile("Дед Мороз едет на санях"))
+        listThree.add(ThemesCrocodile("Олени не хотят работать"))
+        listThree.add(ThemesCrocodile("Дед мороз не накормил оленей и теперь они отказываются лететь"))
+        listThree.add(ThemesCrocodile("Эльфы складывают подарки в мешок"))
+        listThree.add(ThemesCrocodile("Взрыв хлопушки оглушил родителей"))
+        listThree.add(ThemesCrocodile("Ребенок узнал в Деде Мороза бабушку"))
+        listThree.add(ThemesCrocodile("Мальчику подарили Книгу, а он хотел Велосипед"))
+        listThree.add(ThemesCrocodile("Дед Мороз не подарил Снегурочку мальчику"))
+        listThree.add(ThemesCrocodile("Катался на сноуборде и сломал ногу"))
+        listThree.add(ThemesCrocodile("Дед Мороз после детского утренника уснул в мешке из-под подарков"))
+        listThree.add(ThemesCrocodile("Дед Мороз напился и проснулся в постели со Снежной бабой"))
+        listThree.add(ThemesCrocodile("Дед Мороз получил письмо с просьбой от мальчика подарить ему настоящий танк"))
+        listThree.add(ThemesCrocodile("Дед Мороз подарил Снегурочке нижнее белье"))
+        listThree.add(ThemesCrocodile("Снегурочка застала Деда Мороза в постели со Снежной Королевой"))
+        listThree.add(ThemesCrocodile("После новогодних банкетов Снегурочка поправилась на 6 кг"))
+        listThree.add(ThemesCrocodile("Дед Мороз заболел, так как объелся мороженым"))
+        listThree.add(ThemesCrocodile("Санта Клаус разводится с миссис Клаус, потому что нашел новую миссис Клаус"))
+        listThree.add(ThemesCrocodile("Рудольф не хочет лететь, потому что у него депрессия"))
+        listThree.add(ThemesCrocodile("Дед Мороз запил с Зубной Феей"))
+        listThree.add(ThemesCrocodile("У Санты сломался новигатор, а над Океаном телефон не ловит сеть"))
+        listThree.add(ThemesCrocodile("Бесить родственников на Новогодних каникулах"))
 
     }
 }

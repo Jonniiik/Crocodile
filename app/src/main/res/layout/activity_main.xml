@@ -7,19 +7,31 @@
     android:background="#F7C9C9"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_crocodile"
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollable"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:textColor="@android:color/white"
-        android:textSize="48sp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/layout_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_crocodile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="48sp"
+            app:layout_constraintBottom_toTopOf="@+id/layout_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.core.widget.NestedScrollView>
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/animation"
