@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_birthday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    tools:context=".Fragments.BirthdayFragment">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="happy_birthday.json"
+        app:lottie_loop="true" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignBottom="@+id/birthday_button_layout"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_crocodile_question"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="38sp" />
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/birthday_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/layout_birthday_glowButton_Nasta"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:text="Токи Ноки"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/layout_birthday_glowButton_fanny"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Всякое"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/layout_birthday_glowButton_another_fanny"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="10dp"
+            android:text="Интерестенько"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</RelativeLayout>

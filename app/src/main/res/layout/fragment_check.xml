@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".Fragments.CheckFragment">
+
+    <FrameLayout
+        android:id="@+id/check_fragment_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/check_fragment_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="50dp" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/new_year_button_check_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:text="Новый год"
+            android:textColor="@color/white" />
+
+        <com.sanojpunchihewa.glowbutton.GlowButton
+            android:id="@+id/birthday_button_check_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:text="День Рождение"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
